@@ -1,4 +1,4 @@
-app.directive('usAnimate', function() {
+app.directive('usAnimate', function(d3) {
 	return {
 		restrict: 'E',
 		template: '<svg></svg>',

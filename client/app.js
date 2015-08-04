@@ -1,4 +1,4 @@
-var app = angular.module('myViz', ['ui.router']);
+var app = angular.module('myViz', ['ui.router', 'd3Module']);
 
 app.config(function ($urlRouterProvider, $locationProvider) {
    // This turns off hashbang urls (/#about) and changes it to something normal (/about)

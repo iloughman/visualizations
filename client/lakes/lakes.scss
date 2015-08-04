@@ -1,0 +1,41 @@
+.axis path, .axis line {			
+	fill: none;
+	stroke-width: 1;
+	stroke: #000;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2px;
+	shape-rendering: crispEdges;
+}
+
+.formGroup {
+	float: left;
+}
+
+.container {
+	@include clearfix;
+}
+
+.lakeMap {
+	float: left;
+}
+
+.lakeChart {
+	float: left;
+}
+
+.ca {
+	fill: #d3d3d3;
+}
+
+@each $lake,$color in (CSI,blue), (SHA,green), (DMV,yellow), (TAH,steelblue), (CRW, red), (ATN, orange) {
+  circle.#{$lake} {
+    fill: $color;
+  }
+  path.#{$lake} {
+    stroke: $color;
+  }
+}
