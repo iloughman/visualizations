@@ -17,7 +17,7 @@ app.use(express.static(clientPath));
 app.use(express.static(publicPath))
 
 app.listen(port, function(){
-	console.log("Listening to the listener")
+	console.log("Listening to the listener on Port 8000")
 })
 
 app.use('/', function(req, res, next){

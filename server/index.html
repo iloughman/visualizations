@@ -4,30 +4,19 @@
 	<base href="/" />
 
 	<link rel="stylesheet" type="text/css" href="main.css" />
+
 	<script src="/jquery/dist/jquery.js"></script>
 	<script src="/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="/angular/angular.js"></script>
 	<script src="/angular-ui-router/release/angular-ui-router.js"></script>
-<!-- 	// <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script> -->
-
-	<!-- Map -->
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-
+	<script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
 	<script src="main.js"></script>
+
+
 </head>
-<body ng-app="myViz">
-	<h3>Visualizations</h3>
-	<a ui-sref="bars">Bar Charts</a>
-	<br>
-	<a ui-sref="us">Drawing the US</a>
-	<br>
-	<a ui-sref="nyc">NYC Choropleth</a>
-	<br>
-	<a ui-sref="lakes">California Lake Capacities</a>
-	<br>
-	<div style="height: 10px"></div>
-	<div ui-view></div>
+<body ng-app="hackernews">
+	<navbar></navbar>
+	<div class="articleList" ui-view ></div>
 </body>
 
 </html>
